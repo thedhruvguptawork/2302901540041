@@ -70,7 +70,6 @@ Response:
 For real-time notification delivery:
 
 - WebSockets can be used for instant updates
-- Redis Pub/Sub can distribute notifications across servers
 - Notifications are prioritized using:
   - Placement > Result > Event
 - Notifications are sorted using:
