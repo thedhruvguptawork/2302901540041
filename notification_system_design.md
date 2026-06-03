@@ -196,7 +196,7 @@ Therefore indexes should only be added on frequently queried fields.
 
 ## Performance Improvement Strategies
 
-To improve notification system performance at large scale:
+To improve notification system performance at largee scale:
 
 - Use Redis caching for frequently accessed notifications
 - Archive old notifications into cold storage
@@ -205,7 +205,7 @@ To improve notification system performance at large scale:
 
 ## Redis Caching Strategy
 
-Frequently accessed notifications can be cached in Redis.
+Frequently acessed notifications can be cached in Redis.
 
 Flow:
 
@@ -220,3 +220,20 @@ Store in Redis
       ↓
 Return Response
 ```
+
+
+# Stage 5
+
+## Problem
+
+If 50,000 students must receive notifications simultaneously, a synchronous approach may cause:
+
+- Server overload
+- Slow response times
+
+---
+
+## Bad Approach
+
+Sending notifications one-by-one directly from the API server:
+This blocks the server and reduces scalability.
