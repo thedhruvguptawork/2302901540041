@@ -1,0 +1,6 @@
+ email: 'thedhruvguptawork@gmail.com',
+  name: 'dhruv gupta',
+  rollNo: '2302901540041',
+  accessCode: 'sdWWgc',
+  clientID: '3f5c71ab-82f0-49e6-987d-b38b2041cb2b',
+  clientSecret: 'xUrDCeJHVfjeJwzr'
