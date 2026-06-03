@@ -90,3 +90,30 @@ For real-time notification delivery:
   "createdAt": "2026-04-22T10:00:00Z"
 }
 ```
+
+# Stage 2
+
+## Recommended Database
+
+MongoDB is recommended for the notification system because:
+
+- Flexible schema support
+- High scalability
+- JSON-like document storage
+
+---
+
+## Notification Collection Schema
+
+```json
+{
+  "_id": "ObjectId",
+  "studentId": 1042,
+  "title": "Amazon Placement Drive",
+  "type": "Placement",
+  "message": "Amazon hiring for SDE roles",
+  "priority": 3,
+  "isRead": false,
+  "createdAt": "2026-04-22T10:00:00Z"
+}
+```
