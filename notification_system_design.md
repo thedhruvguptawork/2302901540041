@@ -190,3 +190,33 @@ Indexes improve read performance but also:
 - Slow down inserts and updates
 
 Therefore indexes should only be added on frequently queried fields.
+
+
+# Stage 4
+
+## Performance Improvement Strategies
+
+To improve notification system performance at large scale:
+
+- Use Redis caching for frequently accessed notifications
+- Archive old notifications into cold storage
+
+---
+
+## Redis Caching Strategy
+
+Frequently accessed notifications can be cached in Redis.
+
+Flow:
+
+```text
+Client Request
+      ↓
+Redis Cache
+      ↓ Cache Miss
+Database Query
+      ↓
+Store in Redis
+      ↓
+Return Response
+```
